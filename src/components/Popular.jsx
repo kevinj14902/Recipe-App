@@ -31,6 +31,7 @@ function Popular() {
                 <Card>
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt="recipe.title" />
+                  <Gradient />
                 </Card>
                 </SplideSlide>
               );
@@ -78,5 +79,13 @@ function Popular() {
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
   `;
+
+const Gradient = styled.div`
+  z-index: 3;
+  position: absolute;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+  width: 100%;
+  height: 100%;
+`;
   
   export default Popular;
