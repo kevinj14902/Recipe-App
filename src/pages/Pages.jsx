@@ -8,7 +8,8 @@ function Pages() {
 
       <Routes>
         <Route path="/Recipe-App" element={<Home />} />
-        <Route path="/cuisines" element={<Cuisines />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cuisines/:type" element={<Cuisines />} />
       </Routes>
 
   )
