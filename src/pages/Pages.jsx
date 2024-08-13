@@ -9,7 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 function Pages() {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
+ 
       <Routes location={location} key={location.pathname}>
         <Route path="/Recipe-App" element={<Home />} />
         <Route path="/" element={<Home />} />
@@ -17,7 +17,7 @@ function Pages() {
         <Route path="/searched/:search" element={<Searched />} />
         <Route path="/recipes/:name" element={<Recipes />} />
       </Routes>
-    </AnimatePresence>
+
   )
 }
 
