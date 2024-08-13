@@ -16,9 +16,9 @@ function Categories() {
             <h4>American</h4>
         </StyledLink>
         
-        <StyledLink to={"/cuisines/Thai"}>
+        <StyledLink to={"/cuisines/Chinese"}>
             <GiNoodles/>
-            <h4>Thai</h4>
+            <h4>Chinese</h4>
         </StyledLink>
         
         <StyledLink to={"/cuisines/Japanese"}>
